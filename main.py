@@ -94,8 +94,12 @@ async def unknown_command(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
 def main() -> None:
     """Start the bot."""
-    # Create the Application
-    application = Application.builder().token(TOKEN).build()
+    # Create the Application with updated builder pattern
+    application = (
+        Application.builder()
+        .token(TOKEN)
+        .build()
+    )
 
     # Add command handlers
     application.add_handler(CommandHandler("start", start))
