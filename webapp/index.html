@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Pick a Color</h1>
+        <div id="color-picker"></div>
+        <div class="color-info">
+            <div class="color-preview" id="color-preview" style="background-color: #ff0000;"></div>
+            <div class="color-values">
+                <div class="value-row">
+                    <span class="label">HEX</span>
+                    <span class="value" id="hex-value">#FF0000</span>
+                    <button class="copy-btn" data-copy="hex">📋</button>
+                </div>
+                <div class="value-row">
+                    <span class="label">RGB</span>
+                    <span class="value" id="rgb-value">rgb(255, 0, 0)</span>
+                    <button class="copy-btn" data-copy="rgb">📋</button>
+                </div>
+                <div class="value-row">
+                    <span class="label">HSL</span>
+                    <span class="value" id="hsl-value">hsl(0°, 100%, 50%)</span>
+                    <button class="copy-btn" data-copy="hsl">📋</button>
+                </div>
+                <div class="value-row">
+                    <span class="label">CMYK</span>
+                    <span class="value" id="cmyk-value">cmyk(0%, 100%, 100%, 0%)</span>
+                    <button class="copy-btn" data-copy="cmyk">📋</button>
+                </div>
+            </div>
+        </div>
+        <button id="send-btn" class="send-btn">📤 Send to Bot</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5/iro.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
